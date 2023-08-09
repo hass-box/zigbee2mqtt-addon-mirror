@@ -58,8 +58,8 @@ jobs:
           rm -rf .temp
 
           S=$(IFS=,; echo "${slug_image[*]}")
-          echo "[$S]" >> addons.json
-          echo '{"name":"Home Assistant Add-on: Zigbee2MQTT 代理加速","url":"https://github.com/zigbee2mqtt/hassio-zigbee2mqtt","maintainer":"Koen Kanters <koenkanters94@gmail.com>"}' >> repository.json
+          echo "[$S]" > addons.json
+          echo '{"name":"Home Assistant Add-on: Zigbee2MQTT 代理加速","url":"https://github.com/zigbee2mqtt/hassio-zigbee2mqtt","maintainer":"Koen Kanters <koenkanters94@gmail.com>"}' > repository.json
 
 
       - name: Commit files
